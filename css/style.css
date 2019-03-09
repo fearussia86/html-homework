@@ -76,3 +76,7 @@
 .menu-main:after {content: none;}
 .menu-main a {display: block;}
 }
+
+h1 {
+  font-weight: bold;
+}
