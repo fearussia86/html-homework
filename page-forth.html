@@ -237,12 +237,7 @@
 </fieldset>
 
 <br>
-<input type="submit" value="ОФОРМИТЬ ЗАКАЗ" style="background-color:#00c557;">
 
-<!---Любую кнопку вида button можно привязать к любым данным, --->
-
-<br>
-<br>
 
 
 <fieldset>
@@ -258,15 +253,54 @@
   <legend>Множественный выбор</legend>
 
 
+
   <p>
     <label for="">Множественный выбор</label><br>
 
-    <select атрибуты>
-    <option атрибуты>Пункт 1</option>
-    <option атрибуты>Пункт 2</option>
+<!--size = 2 - будет отображаться два элемента, -->
+    <select name="select" required multiple size="3">
+
+
+    <option label="Элемент 1"  value="">Пункт 1</option>
+    <option selected value="">Пункт 2</option>
+    <option value="">Пункт 3</option>
   </select>
   </p>
+
+<p>
+  <select name="" id="">
+
+<optgroup label="zagolovok-gruppy1">
+  <option value="">Выбор 1</option>
+  <option value="">Выбор 2</option>
+  <option value="">Выбор 3</option>
+</optgroup>
+<br>
+<br>
+
+<optgroup label="zagolovok-gruppy2">
+  <option value="">Выбор 1</option>
+  <option value="">Выбор 2</option>
+  <option value="">Выбор 3</option>
+</optgroup>
+
+
+
+
+
+  </select>
+
+</p>
+
 </fieldset>
+
+
+<input type="submit" value="ОФОРМИТЬ ЗАКАЗ" style="background-color:#00c557;">
+
+<!---Любую кнопку вида button можно привязать к любым данным, --->
+
+<br>
+<br>
 
 
 </form>
