@@ -54,7 +54,7 @@
 
 <div style="margin-top:10px;">
   <label for="">Ваше имя</label><br>
-  <input type="text" name="name" required placeholder="Введите Ваше имя">
+  <input type="text" readonly name="name" required placeholder="Введите Ваше имя">
   <br>
 
 
@@ -63,7 +63,7 @@
 
 <div style="margin-top:10px;">
   <label for="">Ваш емейл</label><br>
-  <input type="e-mail" name="email" required placeholder="Введите Ваш емейл">
+  <input type="e-mail" name="email" autofocus required placeholder="Введите Ваш емейл">
   <br>
 </div>
 
@@ -97,7 +97,7 @@
 <p>
 
 <p><label for="polz">Подвигайте ползунком</label></p>
-<input type="range" id="polz" min="3" max="12">
+<input type="range" id="polz" min="3" max="12" step="2" value="4">
 
 
 </p>
@@ -108,14 +108,169 @@
 <br>
 </div>
 
+<div style="margin: 20px 10px;">
+
+<fieldset>
+
+<legend>Чекбоксы и радиокнопки</legend>
+
+<label for=""><input type="checkbox" >Чекбокс</label>
+<br>
+
+<label for=""><input type="radio" ></label>
+
+<p>
+  <label for=""><input type="radio">Радиокнопка</label>
+</p>
+
+<br>
+
+<label for=""><input name="answer" type="radio">Да</label><br>
+<label for=""><input name="answer" type="radio">Нет</label><br>
+<label for=""><input name="answer" type="radio">Не знаю</label><br>
+
+
+<br>
+
+<fieldset>
+  <legend>Группы чекбоксов (флажков)</legend>
+
+<!--Группы чекбоксов используются в ситуации, когда можно выбрать несколько вариантов. -->
+
+<p>
+  <label for="choice"><input checked type="checkbox" name="choice[]"></label>
+  <label for="choice"><input type="checkbox" name="choice[]"></label>
+  <label for="choice"><input type="checkbox" name="choice[]"></label>
+</p>
+
+
+
+</fieldset>
+
+<br>
+
+
+<div>
+  <label for="time">Время</label><br>
+  <input type="time" value="03:15" min="14.00" max="18.00">
+</div>
+
+<p>
+  <label for="date">Выбор даты</label><br>
+  <input type="date">
+</p>
+
+<p>
+
+  <label for="datetime">Выбор даты и времени</label><br>
+
+  <input type="datetime-local">
+
+</p>
+
+<p>
+  <label for="month">Выбор месяца</label><br>
+  <input type="month" id="month">
+</p>
+
+<p>
+  <label for="week">Выбор недели</label><br>
+  <input type="week" id="week">
+</p>
+
+
+<legend>Взятие цвета (цветовая палитра)</legend>
+<p>
+  <input type="color" value="green">
+</p>
+
+
+
+
+</fieldset>
+</div>
+
+
+<fieldset>
+
+  <legend>КНОПКИ (тег input)</legend>
+
+<p>
+  <input type="submit" value="ЗАКАЗ">
+</p>
+
+
+<p>
+  <input type="reset" value="СБРОС">
+</p>
+
+<p>
+  <!--Сама по себе кнопка ничего не делает, но с помощью JS можно задать ей функционал--->
+  <input type="button" value="КНОПКА ПУСТЫШКА">
+</p>
+
+
+<!--КНОПКА IMAGE будет отправлять данные-->
+<p>
+  <input type="image" style="width: 100px;" src="C:\MAMP\htdocs\ITMO\html-homework\images\buttonx.png">
+</p>
+
+</fieldset>
 
 <input style="margin:30px;" type="file" required>
+
+
+<fieldset>
+
+<legen>Кнопка button - превращение ее в отправляющую данные кнопку. </legen>
+
+<p>
+  <label for="data">Кнопка отправит данные</label><br>
+<button type="submit" name="data">ОТПРАВИТЬ ДАННЫЕ</button>
+</p>
+
+
+<p>
+  <label for="">Кнопка не отпраляет данные</label><br>
+  <button type="button">ОТПРАВИТЬ ДАННЫЕ</button>
+</p>
+</fieldset>
 
 <br>
 <input type="submit" value="ОФОРМИТЬ ЗАКАЗ" style="background-color:#00c557;">
 
+<!---Любую кнопку вида button можно привязать к любым данным, --->
+
+<br>
+<br>
+
+
+<fieldset>
+<legend>Текстовая область</legend>
+
+<p><textarea name="" id="" cols="60" rows="5" autofocus required minlength="33" placeholder="Подсказка" wrap="soft"></textarea></p>
+
+</fieldset>
+
+
+
+<fieldset>
+  <legend>Множественный выбор</legend>
+
+
+  <p>
+    <label for="">Множественный выбор</label><br>
+
+    <select атрибуты>
+    <option атрибуты>Пункт 1</option>
+    <option атрибуты>Пункт 2</option>
+  </select>
+  </p>
+</fieldset>
+
 
 </form>
+
 
 
 </div>
