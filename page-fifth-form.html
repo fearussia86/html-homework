@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>КУРСЫ ИТМО, СТРАНИЦА С ФОРМАМИ ЗАХВАТА</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link rel="icon" href="icon.ico" type="image/x-icon">
@@ -21,6 +22,7 @@
       <li><a href="page-third.html">СТРАНИЦА 2</a></li>
       <li><a href="page-forth.html">ФОРМА ЗАХВАТА</a></li>
       <li><a href="page-fifth-form.html">РАСШИРЕННАЯ ФОРМА</a></li>
+      <li><a href="page-learning-css.html">ДЗ ПО CSS</a></li>
     </ul>
   </nav>
 
@@ -28,210 +30,11 @@
 
 <body>
 
+<!--МЕНЮ ДЛЯ ВЗ ГОРИЗОНТАЛЬНОЕ ИЗ ТЕГОВ ul и li-->
 
 
-<div style="margin: 30px 20px;">
-<h2 style="margin: 20px; 0px;">ФОРМА ОПРОСНИК ВЫПУСКНИКУ КУРСОВ </h2>
 
-<form action="/form.php" enctype="multipart/form-data">
 
-<div style="margin-top:10px;">
-  <label for="">ВВЕДИТЕ ВАШЕ ИМЯ</label><br>
-  <input type="text" readonly name="name" required placeholder="Введите Ваше имя">
-  <br>
-
-
-</div>
-
-
-<div style="margin-top:10px;">
-  <label for="">УКАЖИТЕ ВАШ ЕМЕЙЛ</label><br>
-  <input type="e-mail" name="email" autofocus required placeholder="Введите Ваш емейл">
-  <br>
-</div>
-
-
-<div style="margin-top:10px;">
-  <label for="">УКАЖИТЕ ПАРОЛЬ</label><br>
-  <input type="password" name="pswrd" required placeholder="Введите пароль">
-<br>
-</div>
-
-
-<div style="margin-top:10px;">
-<label for="">ПОДТВЕРДИТЕ ПАРОЛЬ</label><br>
-<input type="password" name="pswrd2" required placeholder="Подтвердите пароль">
-<br>
-</div>
-
-<br>
-
-<h2>ЗАПОЛНИТЕ АНКЕТУ</h2>
-
-<div style="margin-top:10px;">
-<fieldset>
-
-<legend>УКАЖИТЕ ДАТУ РОЖДЕНИЯ</legend>
-<p>
-  <label for="date">Выбор даты</label><br>
-  <input type="date">
-</p>
-
-<br>
-
-<p>
-
-<p><label for="polz">КАК СИЛЬНО ВЫ ХОТИТЕ СТАТЬ IT СПЕЦИАЛИСТОМ? (подвигайте ползунком)</label></p>
-
-1<input type="range" id="polz" min="3" max="12" step="1" value="5">5
-
-
-</p>
-
-
-
-</fieldset>
-<br>
-</div>
-
-<div style="margin: 20px 10px;">
-
-<fieldset>
-
-<legend>НАЛИЧИЕ БАЗОВОГО ОБРАЗОВАНИЯ</legend>
-
-<div style="margin-top:20px">
-
-<label for="edu"><input type="checkbox" name="edu[]">Физико-математическая школа</label>
-<label for=""><input type="checkbox" name="edu[]">Высшее техническое образование</label>
-<label for=""><input type="checkbox" name="edu[]">Курсы программирования</label>
-<label for=""><input type="checkbox" name="edu[]">Пока отсутствует</label>
-<br>
-
-
-<p>
-  <label for="">Какие языки программирования Вы хотите выучить?</label><br>
-
-<!--size = 2 - будет отображаться два элемента, -->
-  <select name="select" required multiple size="4" style="width: 500px; background-color: #76ff7a;">
-
-
-  <option label="Элемент 1"  value="">PHP 7.1.</option>
-  <option selected value="" style="font-weight: bold;">Java Script</option>
-  <option value="">Python</option>
-  <option value="">КОМАНДЫ MY SQL</option>
-  <option value="">C++</option>
-  <option value="">C</option>
-</select>
-</p>
-
-
-<br>
-
-<h3>НУЖДАЕТЕСЬ ЛИ ВЫ В ЛИЧНОМ НАСТАВНИКЕ?</h3>
-
-<label for=""><input name="answer" type="radio">Да</label><br>
-<label for=""><input name="answer" type="radio">Нет</label><br>
-<label for=""><input name="answer" type="radio">Не знаю</label><br>
-
-
-<br>
-</div>
-
-
-
-<!--Группы чекбоксов используются в ситуации, когда можно выбрать несколько вариантов. -->
-
-
-
-
-
-</fieldset>
-
-<br>
-
-
-<div>
-  <label for="time">УКАЖИТЕ, СО СКОЛЬКИ ВАМ УДОБНО, ЧТОБЫ НАЧИНАЛИСЬ КУРСЫ?</label><br>
-  <input type="time" value="03:15" min="14.00" max="18.00">
-</div>
-
-
-
-
-</p>
-
-
-
-
-<h4>Выберите цвет Вашего будущего диплома по курсам ИТМО</h4>
-<legend>Взять нужный цвет</legend>
-<p>
-  <input type="color" value="green">
-</p>
-
-
-
-
-</fieldset>
-</div>
-
-
-<fieldset>
-<legend>Укажите дополнительную информацию, которая, как Вы считаете, является важной.</legend>
-
-<p><textarea name="" id="" cols="60" rows="5" autofocus required minlength="70" placeholder="Подсказка" wrap="soft"></textarea></p>
-
-</fieldset>
-
-<h4>Приложите биографию (любой формат)</h4>
-<input style="margin:30px;" type="file" required>
-
-<p>
-  <input type="submit" value="ОФОРМИТЬ ЗАКАЗ" style="background-color:#00c557;">
-</p>
-
-
-<p>
-  <input type="reset" value="СБРОС">
-</p>
-
-
-
-
-<!--КНОПКА IMAGE будет отправлять данные-->
-
-
-</fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!---Любую кнопку вида button можно привязать к любым данным, --->
-
-<br>
-<br>
-
-
-</form>
-
-
-
-</div>
 
 
   <footer>
