@@ -18,10 +18,20 @@
 }
 
 #h1-slider {
-      margin: 30px;
+      margin: 10px;
       color: #fff;
       text-align: center;
       top: 5px;
+      left: 5px;
+      position: absolute;
+}
+
+
+#h2-slider {
+      margin: 10px;
+      color: #fff;
+      text-align: center;
+      top: 75px;
       left: 5px;
       position: absolute;
 }
