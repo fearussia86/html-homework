@@ -1,5 +1,92 @@
 
 
+@import url("grid.css");
+@import url("normalize.css");
+
+ul,ol {
+  display: inline-flex;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+
+ul.slider {
+  display: block;
+  padding: 0;
+  margin: 0 0 30px;
+  list-style-type: none;
+}
+
+
+.slider li {
+  display:none;
+}
+
+.slider li.activ {
+  display: block;
+}
+
+
+.card {
+  border: 1px solid black;
+  height: 100px;
+  vertical-align: inherit;
+  text-align: center;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.cards {
+
+}
+
+
+.relative {
+  position: relative;
+  margin: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+img.half-img {
+/*При задании процентной ширины, ширина конкретного элемента рассчитывается как процент от
+родительского элемента (или окна браузера)*/
+  width: 50%;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: #aeaeaeae;
+  border: 2px solid green;
+  position: relative;
+}
+
+.box-mini {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 100px;
+}
+
+
+
+
+
+
+
 .a-button {
   background-color: #4CAF50; /* Green */
    border: none;
@@ -70,6 +157,7 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
+  display: inline-block;
 }
 .menu-main:before,
 .menu-main:after {
