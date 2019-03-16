@@ -28,11 +28,11 @@
 
 
 #h2-slider {
-      margin: 10px;
+  margin: 10px;
       color: #fff;
       text-align: center;
-      top: 75px;
-      left: 5px;
+      top: 65px;
+      left: -25px;
       position: absolute;
 }
 
