@@ -3,6 +3,29 @@
 @import url("grid.css");
 @import url("normalize.css");
 
+
+.absolute {
+  position: absolute;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+
+}
+
+.relative {
+  position: relative;
+  margin: 5px;
+}
+
+#h1-slider {
+      margin: 30px;
+      color: #fff;
+      text-align: center;
+      top: 5px;
+      left: 5px;
+      position: absolute;
+}
+
 ul,ol {
   display: inline-flex;
   list-style: none;
@@ -59,10 +82,7 @@ div {
 }
 
 
-.relative {
-  position: relative;
-  margin: 30px;
-}
+
 
 img {
   width: 100%;
