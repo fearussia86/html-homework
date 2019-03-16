@@ -32,10 +32,20 @@ ul.slider {
 
 .card {
   border: 1px solid black;
-  height: 100px;
+  height: 200px;
   vertical-align: inherit;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+
+}
+
+.aside {
+  border: 1px solid black;
+  height: 606px;
+  vertical-align: inherit;
+  text-align: center;
+  margin-bottom: 0px;
   box-sizing: border-box;
 
 }
