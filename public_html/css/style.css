@@ -8,7 +8,6 @@
     color: #fff;
 }
 
-
 .flex {
     display: flex;
     flex-direction: row;
@@ -91,27 +90,27 @@ h2,h3,h4 {
 
 #slider {
     display: block;
-    
+
    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
    height: 450px;
    width: 100%;
-   margin: -20px auto 0;
+   margin: -90px auto 0;
    overflow: visible;
    position: relative;
    opacity: 0.1;
-   
-    
+
+
 }
 
 
 .mask-slider {
     overflow: hidden;
    height: 450px;
-   
+
 }
 
 img {
-    
+
 }
 
 #slider ul {
@@ -133,7 +132,7 @@ img {
 
 
 #first-slide {
-    
+
 }
 
 
@@ -286,6 +285,9 @@ transition: all 0.3s ease-in-out;
     background: url("/images/uppermenu2.png");
     min-height: 50px;
     padding: 20px 1px 20px 1px;
+
+    z-index: 999;
+    margin: 0 auto;
 }
 
 ul,ol.contacts {
@@ -305,7 +307,7 @@ i.fa {
 
 ul.contacts>li>i.fa {
     color: #fff;
-    
+
 }
 
 a.social-header>i.fa {
@@ -337,6 +339,7 @@ a.social-header>i.fa {
  align-items:stretch;
  /*border: 1px solid black;*/
  padding-inline-start: 1px;
+
 }
 
 
@@ -455,4 +458,3 @@ a.social-header>i.fa {
  box-shadow: 1px 5px 10px 1px black;
  transition: all 0.1s ease;
 }
-
