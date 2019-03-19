@@ -1,0 +1,9 @@
+
+
+/*СТИЛИ МЕДИА ЗАПРОСОВ (АДАПТИВНОЕ МЕНЮ И ВЕРСТКА)*/
+
+@media all and (max-width: 800px) {
+ .dws-menu{
+  overflow: hidden;
+ }
+}  

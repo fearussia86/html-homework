@@ -2,6 +2,216 @@
 
 @import url("grid.css");
 @import url("normalize.css");
+@import url("bootstrap.css");
+@import url("flex-box.css");
+@import url("font-awesome.css");
+
+/*CSS СТИЛИ ВЫПДАЮЩЕГО МЕНЮ*/
+
+header{
+ margin: 100px;
+ font-family: Cuprum, Arial, Helvetica, sans-serif;
+ margin-top: 50px;
+ background-color: grey;
+ position: relative;
+
+}
+
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+
+.dws-menu > ul{
+ display: flex;
+ justify-content: space-between;
+ align-items:stretch;
+ border: 2px solid black;
+}
+
+
+.dws-menu > ul li a{
+ display: block;
+ background: #ececed;
+ padding: 15px 30px 15px 40px;
+ font-size: 16px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+}
+
+.dws-menu > ul li{
+ position: relative;
+}
+
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 21px;
+}
+
+.dws-menu > ul li:first-child{
+ border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+ border-right: 1px solid #babbbd;
+}
+
+.dws-menu > ul li{
+ position: relative;
+ border-right: 1px solid #c7c8ca;
+}
+
+.dws-menu li a:hover{
+ background: #454547;
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.5s ease;
+}
+
+.dws-menu > ul li a{
+ display: block;
+ background: #ececed;
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+
+.dws-menu li > ul li{
+ border: 2px solid #c7c8ca;
+}
+
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: #e4e4e5;
+}
+
+
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -200px;
+ top: 0;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 200px;
+ display: none;
+}
+
+.dws-menu li:hover > ul{
+ display: block;
+
+}
+
+
+.dws-menu > ul li a{
+ display: block;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+ background: #c9c9c9; /* Old browsers */
+ background: -moz-linear-gradient(top,  #c9c9c9 0%, #f6f6f6 2%, #c4c5c7 98%, #757577 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  #c9c9c9 0%,#f6f6f6 2%,#c4c5c7 98%,#757577 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  #c9c9c9 0%,#f6f6f6 2%,#c4c5c7 98%,#757577 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); /* IE6-9 */
+
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+
+.dws-menu li a:hover{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
+ background: #e0e1e5; /* Old browsers */
+ background: -moz-linear-gradient(top,  #e0e1e5 0%, #454547 2%, #454547 98%, #e0e1e5 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  #e0e1e5 0%,#454547 2%,#454547 98%,#e0e1e5 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  #e0e1e5 0%,#454547 2%,#454547 98%,#e0e1e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 ); /* IE6-9 */
+
+ color: #ffffff;
+ box-shadow: 1px 5px 10px 1px black;
+ transition: all 0.1s ease;
+}
+
+
+
+/*СТИЛИ ДЛЯ ВТОРОГО ВЫПДАЮЩЕГО МЕНЮ (БОЛЕЕ ПРОСТОГО)*/
+
+.side {
+  width: 300px;
+  margin: 30px;
+}
+
+
+
+
+ul.menu {
+margin: 0px;
+padding: 0px;
+list-style: none;
+display: block !important;
+}
+
+
+/*Внешний вид меню*/
+
+.menu a {
+  background: #3d3d3d;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  border-bottom: 4px solid #765;
+  transition: 0.5s all;
+}
+
+.menu a:hover {
+background: #00c557;
+padding: 15px 0px 15px 20px;
+}
+
+
+ul.menu__drop > li {
+  padding: 0px 5px;
+  width: 250px;
+}
+
+/*Всплывающее меню через позиционирование*/
+
+.menu__list {
+  position: relative;
+
+}
+
+
+.menu__drop {
+  position: absolute;
+  width: 100%;
+  left: 90%;
+  opacity: 0;
+  top: -30%;
+}
+
+ul.menu__drop>li>a {
+  width: 200px;
+}
+
+ul.menu__drop>li>a:hover {
+  width: 220px;
+}
+
+.menu__list:hover .menu__drop{
+  opacity: 1.0;
+
+
+}
 
 
 .absolute {
